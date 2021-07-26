@@ -1,0 +1,36 @@
+[+] Directory Structure
+[+] NPM Project and all Dependencies
+    -Dependencies
+        -express
+        -ejs express-ejs-layouts
+    -Dev Dependencies
+        -nodemon
+[+] Create Express server - Create a server.js file
+[.] Create Home Page using Html and Css
+    -include tailwind Css
+[.] Create Cart Page
+    -order summary section
+    -empty cart section
+[.] Create Order controller and link it with server.js
+[.] Create Orders view with table for customer and admin
+[.] Create Orders single page with status
+[.] Create Login page with route
+[.] Create Register page with route
+[.] Build Register crud
+    -dependencies express-flash express-session cookie-parser detenv
+    -status code article https://www.restapitutorial.com/httpstatuscodes.html
+    -Database connection. dependencies mongoose
+[.] Build Login using passport
+    -install dependencies passport passport-local express-session
+[.] Create menu model and put dummy Data
+[.] Fetch all food from db and show on the home page
+[.] Add to cart functionality
+    -use connect-mongo for session store
+    -axios to send ajax request
+    -install notification library npm i noty https://ned.im/noty/#/
+[.] Make order on carts page
+[.] Place order functionality
+[.] Order tracker
+    -dependencies moment
+[.] Socket connection
+    -dependencies socket.io
