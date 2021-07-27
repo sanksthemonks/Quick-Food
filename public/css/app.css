@@ -1,0 +1,45 @@
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #232323;
+}
+
+nav li:last-child a {
+  background: radial-gradient(#a1c4fd, #c2e9fb);
+}
+nav li:last-child a:hover {
+  background: radial-gradient(#96deda, #50c9c3);
+}
+
+nav li a {
+  transition: all 0.5s ease-in-out;
+}
+nav li a:hover {
+  color: radial-gradient(#a1c4fd, #c2e9fb);
+}
+
+section.hero {
+  background: radial-gradient(#667eea, #764ba2);
+}
+
+section.villian {
+  background: radial-gradient(#48c6ef, #537895);
+}
+
+section.judge {
+  background: radial-gradient(#ebb678, #C8553D);
+}
+
+.size {
+  background: radial-gradient(#feada6, #f5efef);
+}
+
+.add-to-cart {
+  border: 2px solid #593e67;
+  color: #232323;
+}
+.add-to-cart:hover {
+  background: #593e67;
+  border-color: #fff;
+  color: #fff;
+}

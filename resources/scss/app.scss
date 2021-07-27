@@ -1,0 +1,44 @@
+@import './variables';
+
+body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: $dark;
+}
+
+nav li:last-child a{
+    background: $primary;
+    &:hover {background: $primary-hover;
+
+    }
+}
+
+nav li a {
+    transition: $smooth;
+    &:hover {
+        color: $primary;
+    }
+}
+
+section.hero {
+    background: $color1;
+}
+
+section.villian {
+    background: $secondary;
+}
+section.judge {
+    background: $color5;
+}
+.size{
+    background: $color2;
+}
+.add-to-cart{
+    border: 2px solid $colorP;
+    color: $dark;
+    &:hover {
+        background: $colorP;
+        border-color: $pure;
+        color: $pure;
+    }
+}
