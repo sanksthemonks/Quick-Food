@@ -8,8 +8,8 @@ body {
 
 nav li:last-child a{
     background: $primary;
-    &:hover {background: $primary-hover;
-
+    &:hover {
+        background: $primary-hover;
     }
 }
 
@@ -36,6 +36,7 @@ section.judge {
 .add-to-cart{
     border: 2px solid $colorP;
     color: $dark;
+    transition: $smooth;
     &:hover {
         background: $colorP;
         border-color: $pure;
