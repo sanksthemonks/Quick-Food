@@ -43,3 +43,25 @@ section.judge {
         color: $pure;
     }
 }
+.btn-primary {
+    background: $colorT;
+    transition: $smooth;
+    &:hover {
+        background: $colorH;
+    }
+}
+
+section.cart {
+    background: $color7;
+    .amount {
+        color: $colorS;
+    }
+}
+
+section.login {
+    background: $primary-hover;
+}
+
+section.register {
+    background: $color4;
+}

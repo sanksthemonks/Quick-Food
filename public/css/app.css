@@ -44,3 +44,26 @@ section.judge {
   border-color: #fff;
   color: #fff;
 }
+
+.btn-primary {
+  background: #13547a;
+  transition: all 0.5s ease-in-out;
+}
+.btn-primary:hover {
+  background: #3c2f2f;
+}
+
+section.cart {
+  background: radial-gradient(#c79081, #dfa579);
+}
+section.cart .amount {
+  color: #854442;
+}
+
+section.login {
+  background: radial-gradient(#96deda, #50c9c3);
+}
+
+section.register {
+  background: radial-gradient(#ff758c, #ff7eb3);
+}
