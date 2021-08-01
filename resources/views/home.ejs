@@ -1,11 +1,11 @@
 
-  <section class="hero" py-16>
+    <section class="hero" py-16>
         <div class="container mx-auto flex items-center justify-between">
             <div class="w-1/2">
                 <h1 class="text-5xl font-bold">Need Something To Eat?<br>Give Yourself A Treat</h1>
                 <br>
                 <h4 class="text-xl">Wherever You Are or Whenever You Need;<br>Quick Food will Always be Ready!<br>So, Next time you are Hungry;<br>Give Quick Food Your Receipt!</h4>
-                <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary"> &#9830; Order Now &#9830; </button>
+                <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Order Now</button>
             </div>
 
             <div class="w-1/2">
@@ -17,98 +17,23 @@
     <section class="judge">
         <div class="menu container mx-auto py-8">
             <h1 class="text-xl font-bold mb-8">All Food items</h1>
-            <div class="grid grid-cols-5 gap-x-14 gap-y-16">
-                <!--Menu Item 1-->
-                <div class="w-64">
-                    <img class="h-40 mb-4 mx-auto" src="/img/image_2.jpg" alt="">
-                    <div class="text-center">
-                        <h2 class="mb-4 text-lg">Pizza</h2>
-                        <span class="size py-1 px-4 rounded-full uppercase text-xs">Americano Salame</span>
-                        <div class="flex items-center justify-around mt-6">
-                            <span class="font-bold text-lg">$24.99</span>
-                            <button class="add-to-cart py-1 px-6 rounded-full">
-                                <span>+</span>
-                                <span class="ml-4">Add</span>
-                            </button>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-14 gap-y-16">
+                <% foods.forEach(function(food) { %>
+                    <div class="w-64">
+                        <img class="h-40 mb-4 mx-auto" src="/img/<%= food.image %>" alt="">
+                        <div class="text-center">
+                            <h2 class="mb-4 text-lg"><%= food.name %></h2>
+                            <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= food.type %></span>
+                            <div class="flex items-center justify-around mt-6">
+                                <span class="font-bold text-lg">$<%= food.price %></span>
+                                <button data-food="<%= JSON.stringify(food) %>" class="add-to-cart py-1 px-6 rounded-full">
+                                    <span>+</span>
+                                    <span class="ml-4">Add</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--Menu Item 2-->
-                <div class="w-64">
-                    <img class="h-40 mb-4 mx-auto" src="/img/image_3.jpg" alt="">
-                    <div class="text-center">
-                        <h2 class="mb-4 text-lg">Rice</h2>
-                        <span class="size py-1 px-4 rounded-full uppercase text-xs">Chicken and Egg Mixed and Fried</span>
-                        <div class="flex items-center justify-around mt-6">
-                            <span class="font-bold text-lg">$19.99</span>
-                            <button class="add-to-cart py-1 px-6 rounded-full">
-                                <span>+</span>
-                                <span class="ml-4">Add</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!--Menu Item 3-->
-                <div class="w-64">
-                    <img class="h-40 mb-4 mx-auto" src="/img/image_4.jpg" alt="">
-                    <div class="text-center">
-                        <h2 class="mb-4 text-lg">Pasta</h2>
-                        <span class="size py-1 px-4 rounded-full uppercase text-xs">Spaghetti Bolognese</span>
-                        <div class="flex items-center justify-around mt-6">
-                            <span class="font-bold text-lg">$24.99</span>
-                            <button class="add-to-cart py-1 px-6 rounded-full">
-                                <span>+</span>
-                                <span class="ml-4">Add</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!--Menu Item 4-->
-                <div class="w-64">
-                    <img class="h-40 mb-4 mx-auto" src="/img/image_5.jpg" alt="">
-                    <div class="text-center">
-                        <h2 class="mb-4 text-lg">Soup</h2>
-                        <span class="size py-1 px-4 rounded-full uppercase text-xs">French Onion</span>
-                        <div class="flex items-center justify-around mt-6">
-                            <span class="font-bold text-lg">$29.99</span>
-                            <button class="add-to-cart py-1 px-6 rounded-full">
-                                <span>+</span>
-                                <span class="ml-4">Add</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                 <!--Menu Item 5-->
-                 <div class="w-64">
-                    <img class="h-40 mb-4 mx-auto" src="/img/image_1.jpg" alt="">
-                    <div class="text-center">
-                        <h2 class="mb-4 text-lg">Salad</h2>
-                        <span class="size py-1 px-4 rounded-full uppercase text-xs">Potato Salad</span>
-                        <div class="flex items-center justify-around mt-6">
-                            <span class="font-bold text-lg">$9.99</span>
-                            <button class="add-to-cart py-1 px-6 rounded-full">
-                                <span>+</span>
-                                <span class="ml-4">Add</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!--Menu Item 6-->
-                <div class="w-64">
-                    <img class="h-40 mb-4 mx-auto" src="/img/image_6.jpg" alt="">
-                    <div class="text-center">
-                        <h2 class="mb-4 text-lg">Noodles</h2>
-                        <span class="size py-1 px-4 rounded-full uppercase text-xs">Miso Pork Ramen</span>
-                        <div class="flex items-center justify-around mt-6">
-                            <span class="font-bold text-lg">$19.99</span>
-                            <button class="add-to-cart py-1 px-6 rounded-full">
-                                <span>+</span>
-                                <span class="ml-4">Add</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
+                <% }) %>
             </div>
         </div>
     </section>
