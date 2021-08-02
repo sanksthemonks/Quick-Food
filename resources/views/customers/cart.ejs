@@ -8,6 +8,13 @@
             </div>
             <!--Food List 1-->
             <div class="food-list">
+                <div class="flex items-center border-b border-gray-300 pt-4 pb-4">
+                    <span class="flex font-bold text-lg mr-4">Food Image</span>
+                    <span class="flex-1 font-bold text-lg">Food Name</span>
+                    <span class="flex-1 font-bold text-lg">Servings Ordered</span>
+                    <span class="flex-1 font-bold text-lg">Individual Price</span>
+                    <span class="font-bold text-lg">Total Price</span>
+                </div>
                 <% for(let food of Object.values(session.cart.items)) { %>
                     <div class="flex items-center my-8">
                         <img class="w-24" src="/img/<%= food.item.image%>" alt="">
@@ -16,7 +23,7 @@
                             <span><%= food.item.type %></span>
                         </div>
                         <span class="flex-1"><%= food.qty %> Serving</span>
-                        <span class="flex-1 font-bold text-lg">$<%= food.item.price %></span>
+                        <span class="flex-1 text-lg">$<%= food.item.price %></span>
                         <span class="font-bold text-lg">$<%= food.item.price * food.qty %></span>
                     </div>
                 <% } %>
