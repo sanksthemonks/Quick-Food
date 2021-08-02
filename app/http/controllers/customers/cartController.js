@@ -1,3 +1,5 @@
+const { json } = require("express")
+
 function cartController() {
     return {
         index(req, res) {
@@ -13,6 +15,7 @@ function cartController() {
                 }
             }
             let cart = req.session.cart
+            
             // Check if item does not exist in cart
             if(!cart.items[req.body._id]) {
                 cart.items[req.body._id] = {

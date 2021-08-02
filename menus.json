@@ -4,7 +4,7 @@
     },
     "name": "Salad",
     "image": "image_1.jpg",
-    "price": "9.99",
+    "price": "10",
     "type": "Potato Salad"
   },{ 
     "_id": {
@@ -12,7 +12,7 @@
     },
     "name": "Pizza",
     "image": "image_2.jpg",
-    "price": "24.99",
+    "price": "25",
     "type": "Americano Salame"
   },{ 
     "_id": {
@@ -20,7 +20,7 @@
     },
     "name": "Rice",
     "image": "image_3.jpg",
-    "price": "19.99",
+    "price": "20",
     "type": "Mixed Chicken and Egg Fried"
   },{ 
     "_id": {
@@ -28,7 +28,7 @@
     },
     "name": "Pasta",
     "image": "image_4.jpg",
-    "price": "24.99",
+    "price": "25",
     "type": "Spaghetti Bolognese"
   },{ 
     "_id": {
@@ -36,7 +36,7 @@
     },
     "name": "Soup",
     "image": "image_5.jpg",
-    "price": "29.99",
+    "price": "30",
     "type": "French Onion"
   },{ 
     "_id": {
@@ -44,6 +44,6 @@
     },
     "name": "Noodles",
     "image": "image_6.jpg",
-    "price": "19.99",
+    "price": "30",
     "type": "Miso Pork Ramen"
   }]

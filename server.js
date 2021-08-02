@@ -31,14 +31,21 @@ app.use(session({
     cookie: { maxAge: 1000 * 60 * 60 *24 }
 }))
 
+app.use(flash())
+// Assets
+app.use(express.static('public'))
+app.use(express.json())
+
+//Global Middleware
+app.use((req, res, next) => {
+    res.locals.session = req.session
+    next()
+})
+
 // Set Template Engine
 app.use(expressLayout)
 app.set('views', path.join(__dirname, '/resources/views'))
 app.set('view engine', 'ejs')
-
-app.use(flash())
-// Assets
-app.use(express.static('public'))
 
 require('./routes/web')(app)
 
