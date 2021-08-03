@@ -352,3 +352,11 @@ section.register {
   border-radius: 50px !important;
   padding-left: 8px !important;
 }
+
+section.orders {
+  background: radial-gradient(#e4efe9, #93a5cf);
+}
+
+a.link {
+  color: #C8553D;
+}
