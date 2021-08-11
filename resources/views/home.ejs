@@ -2,10 +2,10 @@
     <section class="hero" py-16>
         <div class="container mx-auto flex items-center justify-between">
             <div class="w-1/2">
-                <h1 class="text-5xl font-bold">Need Something To Eat?<br>Give Yourself A Treat</h1>
+                <h1 class="text-3xl md:text-5xl font-bold">Need Something To Eat?<br>Give Yourself A Treat</h1>
                 <br>
                 <h4 class="text-xl">Wherever You Are or Whenever You Need;<br>Quick Food will Always be Ready!<br>So, Next time you are Hungry;<br>Give Quick Food Your Receipt!</h4>
-                <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Order Now</button>
+                <!--<button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Order Now</button>-->
             </div>
 
             <div class="w-1/2">
@@ -19,7 +19,7 @@
             <h1 class="text-xl font-bold mb-8">All Food items</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-14 gap-y-16">
                 <% foods.forEach(function(food) { %>
-                    <div class="w-64">
+                    <div class="w-full md:w-64">
                         <img class="h-40 mb-4 mx-auto" src="/img/<%= food.image %>" alt="">
                         <div class="text-center">
                             <h2 class="mb-4 text-lg"><%= food.name %></h2>
